@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Tianming Liu / Distinguished Research Professor of Computer Science"
+title                    : "Tianming Liu' Lab"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Tianming Liu"
 description              : &description "personal description"
 url                      : https://wrwilliam.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,7 +23,7 @@ repository               : "wrwilliam/wrwilliam.github.io"
 author:
   # Biographic information
   avatar           : "/images/profile.jpg"
-  name             : "Your Sidebar Name"
+  name             : "Tianming Liu"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "School of Computing"
