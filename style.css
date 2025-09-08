@@ -11,12 +11,10 @@ body {
 }
 
 .hero-image {
-    /* 将 background-image 的 URL 替换为你的本地图片文件路径 */
-    background: url('llm-applications-main.jpg') no-repeat center center/cover;
+    /* 使用根目录相对路径，图片路径前加一个斜杠 / */
+    background: url('/llm-applications-main.jpg') no-repeat center center/cover;
     
-    /* 调整高度，将其设置为 150px 以减小空间占用 */
-    height: 150px; 
-    
+    height: 150px;
     position: relative;
     display: flex;
     justify-content: center;
