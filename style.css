@@ -11,9 +11,12 @@ body {
 }
 
 .hero-image {
-    background: url('https://source.unsplash.com/random/1600x600/?ai,neural-network,technology') no-repeat center center/cover;
-    /* 高度减半：从 300px 变为 150px */
-    height: 150px; /* 原来是300px，现在减半 */
+    /* 将 background-image 的 URL 替换为你的本地图片文件路径 */
+    background: url('llm-applications-main.jpg') no-repeat center center/cover;
+    
+    /* 调整高度，将其设置为 150px 以减小空间占用 */
+    height: 150px; 
+    
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,11 +26,14 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3.0rem; /* 字体稍微调小一点，以适应新高度 */
+    /* 字体大小可以根据新高度适当调整，这里是稍微小一点 */
+    font-size: 3.0rem; 
     margin: 0;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
 }
+
+
 
 nav {
     background: #444;
