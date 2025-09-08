@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     color: #333;
     /* 背景图片应用到 body */
-    background: url('./llm.jpg') no-repeat center center fixed; /* 'fixed' 确保背景图不随内容滚动 */
+    background: url('./llm.png') no-repeat center center fixed; /* 'fixed' 确保背景图不随内容滚动 */
     background-size: cover; /* 覆盖整个页面 */
     
     min-height: 100vh;
