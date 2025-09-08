@@ -3,9 +3,8 @@ body {
     margin: 0;
     line-height: 1.6;
     color: #333;
-    /* 背景图片应用到 body */
-    background: url('./llm.png') no-repeat center center fixed; /* 'fixed' 确保背景图不随内容滚动 */
-    background-size: cover; /* 覆盖整个页面 */
+    /* 移除全局背景图片，恢复为纯色背景 */
+    background-color: #f4f4f4; 
     
     min-height: 100vh;
     display: flex;
@@ -13,8 +12,9 @@ body {
 }
 
 .hero-image {
-    /* 头部不再需要背景图片，只保留高度和文本样式 */
-    background: rgba(0, 0, 0, 0.5); /* 给头部添加一个半透明的背景色，让文字更清晰 */
+    /* 将背景图片应用到头部区域 */
+    background: url('./llm.png') no-repeat center center/cover;
+    
     height: 150px; 
     position: relative;
     display: flex;
@@ -32,37 +32,11 @@ body {
 }
 
 nav {
-    /* 导航栏背景保持，但可以稍微调整以配合整体背景 */
-    background: rgba(68, 68, 68, 0.8); /* 导航栏也使用半透明背景 */
+    /* 恢复导航栏的背景颜色，移除透明度 */
+    background: #444;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    background-color: rgba(85, 85, 85, 0.8); /* 悬停效果也调整为半透明 */
-}
-
-.nav-links li a.active {
-    background-color: #007bff; /* 保持蓝色高亮 */
-    border-radius: 5px;
 }
 
 main {
@@ -70,14 +44,16 @@ main {
     margin: 2rem auto;
     padding: 0 20px;
     flex-grow: 1;
-    border: 1px solid rgba(204, 204, 204, 0.5); /* 边框也可以稍微透明 */
+    border: 1px solid #ccc; /* 恢复边框颜色 */
     border-radius: 8px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.9); /* 给主内容区一个半透明的白色背景 */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 阴影也稍微深一点 */
+    background: white; /* 恢复白色背景 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
+
+
 
 .content-section {
     /* content-section 的背景也需要调整，以确保内容可读 */
